@@ -11,3 +11,5 @@ services:
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
       - "./jupyterhub_config.py:/srv/jupyterhub/jupyterhub_config.py:ro"
+    environment:
+      - "JUPYTERHUB_CRYPT_KEY=hAi4paBnF_dwzbM-RmddVA45rohpeOIK4NBkBOE9e38="
